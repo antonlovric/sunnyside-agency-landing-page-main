@@ -1,0 +1,268 @@
+header {
+  height: 5em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  background: transparent;
+  padding: 1.5em;
+}
+
+.navigation {
+  display: flex;
+  gap: 4em;
+  padding: 0.5em;
+  position: absolute;
+  right: 1em;
+}
+
+.navigationLink {
+  text-decoration: none;
+  color: white;
+  font-family: "Barlow", sans-serif;
+  font-size: 1.2rem;
+  border-radius: 100px;
+  padding: 1em;
+  transition: 0.2s all ease-in-out;
+}
+.navigationLink:hover {
+  background: #90d4c5;
+}
+
+.landingTitle {
+  text-align: center;
+  margin: auto;
+}
+
+.landingTextArea {
+  position: relative;
+  top: -10em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.arrowDown {
+  position: absolute;
+  height: 7em;
+  left: 50%;
+  top: 200%;
+  transform: translateX(-50%);
+}
+
+.landingSection {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/desktop/image-header.jpg");
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+}
+
+h1 {
+  font-family: "Fraunces", serif;
+  color: white;
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.aboutContainer {
+  width: 100%;
+  max-height: 80vh;
+  display: flex;
+}
+
+.imageAbout,
+.textAboutContainer {
+  width: 50%;
+}
+
+.textAboutContainer {
+  padding: 10em;
+}
+
+.headingAbout {
+  font-family: "Fraunces", serif;
+  margin-bottom: 1em;
+  font-size: 2.5rem;
+  color: #23303e;
+}
+
+.textAbout {
+  font-family: "Barlow", sans-serif;
+  font-size: 1.2rem;
+  color: #5a636c;
+}
+
+.aboutLink {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #23303e;
+  font-family: "Fraunces", serif;
+}
+
+.transformLink:hover {
+  background-image: linear-gradient(#fad400, #fad400);
+  background-position: 0 80%;
+  background-size: 100% 5px;
+  background-repeat: no-repeat;
+}
+
+.standOutLink:hover {
+  background-image: linear-gradient(#fe7867, #fe7867);
+  background-position: 0 80%;
+  background-size: 100% 5px;
+  background-repeat: no-repeat;
+}
+
+.serviceSection {
+  display: flex;
+  min-width: 100%;
+  position: relative;
+}
+
+.serviceImage {
+  width: 100%;
+  object-fit: cover;
+}
+
+.serviceContainer {
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.serviceTextContainer {
+  position: absolute;
+  text-align: center;
+  height: 5em;
+  bottom: 7em;
+  color: #5a636c;
+}
+
+.serviceText {
+  font-family: "Barlow", sans-serif;
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  line-height: 1.5;
+}
+
+.serviceHeading {
+  font-family: "Fraunces", serif;
+  color: #23303e;
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+
+.testimonialSection {
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.testimonialTitle {
+  text-align: center;
+  text-transform: uppercase;
+  color: #a7abae;
+  letter-spacing: 3px;
+  font-family: "Fraunces", serif;
+}
+
+.testimonialsContainer {
+  font-family: "Barlow", sans-serif;
+  display: flex;
+  gap: 4em;
+  padding: 2em;
+  justify-content: center;
+}
+
+.testimonial {
+  display: flex;
+  border-radius: 10px;
+  padding: 2em;
+  flex-direction: column;
+  align-items: center;
+  gap: 6em;
+  text-align: center;
+  width: 23rem;
+  color: #5a636c;
+}
+
+.testimonialText {
+  line-height: 1.5;
+}
+
+.clientName {
+  font-family: "Fraunces", serif;
+}
+
+.clientTitle {
+  color: #a7abae;
+}
+
+.clientImage {
+  border-radius: 50%;
+  width: 5em;
+  object-fit: cover;
+}
+
+.projectSection {
+  width: 100%;
+  display: flex;
+}
+
+.projectImage {
+  width: 25%;
+}
+
+.contactSection {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  justify-content: center;
+  align-items: center;
+  background: #90d4c5;
+  padding: 2em;
+}
+
+.contactIcons {
+  display: flex;
+  gap: 2em;
+}
+
+.contactIcon {
+  cursor: pointer;
+}
+
+.contactIcon:hover {
+  filter: brightness(1000%);
+}
+
+.contactNavigation {
+  margin-bottom: 1em;
+  display: flex;
+  gap: 3em;
+}
+
+.contactNavigationLink {
+  color: #818498;
+  text-decoration: none;
+  font-family: "Barlow", sans-serif;
+  transition: 0.2s all ease-in-out;
+}
+.contactNavigationLink:hover {
+  color: white;
+}
+
+/*# sourceMappingURL=main.css.map */

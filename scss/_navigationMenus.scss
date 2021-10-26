@@ -1,0 +1,32 @@
+@use "./variables" as *;
+header {
+  height: 5em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  background: transparent;
+  padding: 1.5em;
+}
+
+.navigation {
+  display: flex;
+  gap: 4em;
+  padding: 0.5em;
+  position: absolute;
+  right: 1em;
+}
+
+.navigationLink {
+  text-decoration: none;
+  color: white;
+  font-family: "Barlow", sans-serif;
+  font-size: 1.2rem;
+  border-radius: 100px;
+
+  padding: 1em;
+  transition: 0.2s all ease-in-out;
+  &:hover {
+    background: $lightBlue;
+  }
+}

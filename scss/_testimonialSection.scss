@@ -1,0 +1,51 @@
+@use "./variables" as *;
+
+.testimonialSection {
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.testimonialTitle {
+  text-align: center;
+  text-transform: uppercase;
+  color: $grayishBlue;
+  letter-spacing: 3px;
+  font-family: "Fraunces", serif;
+}
+
+.testimonialsContainer {
+  font-family: "Barlow", sans-serif;
+  display: flex;
+  gap: 4em;
+
+  padding: 2em;
+
+  justify-content: center;
+}
+.testimonial {
+  display: flex;
+  // outline: 2px solid $grayishBlue;
+  border-radius: 10px;
+  padding: 2em;
+  flex-direction: column;
+  align-items: center;
+  gap: 6em;
+  text-align: center;
+  width: 23rem;
+  color: $veryDarkGrayishBlue;
+}
+
+.testimonialText {
+  line-height: 1.5;
+}
+.clientName {
+  font-family: "Fraunces", serif;
+}
+.clientTitle {
+  color: $grayishBlue;
+}
+.clientImage {
+  border-radius: 50%;
+  width: 5em;
+  object-fit: cover;
+}

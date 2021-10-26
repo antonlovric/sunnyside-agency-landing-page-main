@@ -1,0 +1,39 @@
+.landingTitle {
+  text-align: center;
+  margin: auto;
+}
+
+.landingTextArea {
+  position: relative;
+  top: -10em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.arrowDown {
+  position: absolute;
+  height: 7em;
+  left: 50%;
+  top: 200%;
+  transform: translateX(-50%);
+}
+
+.landingSection {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/desktop/image-header.jpg");
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+}
+
+h1 {
+  font-family: "Fraunces", serif;
+  color: white;
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}

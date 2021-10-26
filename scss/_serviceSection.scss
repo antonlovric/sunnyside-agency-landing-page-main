@@ -1,0 +1,39 @@
+@use "./variables" as *;
+.serviceSection {
+  display: flex;
+  min-width: 100%;
+  position: relative;
+}
+.serviceImage {
+  width: 100%;
+  object-fit: cover;
+}
+
+.serviceContainer {
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.serviceTextContainer {
+  position: absolute;
+  text-align: center;
+  height: 5em;
+  bottom: 7em;
+  color: $veryDarkGrayishBlue;
+}
+
+.serviceText {
+  font-family: "Barlow", sans-serif;
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  line-height: 1.5;
+}
+.serviceHeading {
+  font-family: "Fraunces", serif;
+  color: $veryDarkDesaturatedBlue;
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}

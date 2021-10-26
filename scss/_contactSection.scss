@@ -1,0 +1,36 @@
+@use "./variables" as *;
+.contactSection {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  justify-content: center;
+  align-items: center;
+  background: $lightBlue;
+  padding: 2em;
+}
+.contactIcons {
+  display: flex;
+  gap: 2em;
+}
+.contactIcon {
+  cursor: pointer;
+}
+.contactIcon:hover {
+  filter: brightness(1000%);
+}
+
+.contactNavigation {
+  margin-bottom: 1em;
+  display: flex;
+  gap: 3em;
+}
+
+.contactNavigationLink {
+  color: $darkGrayishBlue;
+  text-decoration: none;
+  font-family: "Barlow", sans-serif;
+  transition: 0.2s all ease-in-out;
+  &:hover {
+    color: white;
+  }
+}

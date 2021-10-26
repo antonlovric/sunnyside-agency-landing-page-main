@@ -1,0 +1,47 @@
+@use "./variables" as *;
+.aboutContainer {
+  width: 100%;
+  max-height: 80vh;
+  display: flex;
+}
+.imageAbout,
+.textAboutContainer {
+  width: 50%;
+  // height: 80%;
+}
+
+.textAboutContainer {
+  padding: 10em;
+}
+
+.headingAbout {
+  font-family: "Fraunces", serif;
+  margin-bottom: 1em;
+  font-size: 2.5rem;
+  color: $veryDarkDesaturatedBlue;
+}
+.textAbout {
+  font-family: "Barlow", sans-serif;
+  font-size: 1.2rem;
+  color: $veryDarkGrayishBlue;
+}
+
+.aboutLink {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $veryDarkDesaturatedBlue;
+  font-family: "Fraunces", serif;
+}
+
+.transformLink:hover {
+  background-image: linear-gradient($colorYellow, $colorYellow);
+  background-position: 0 80%;
+  background-size: 100% 5px;
+  background-repeat: no-repeat;
+}
+.standOutLink:hover {
+  background-image: linear-gradient($colorSoftRed, $colorSoftRed);
+  background-position: 0 80%;
+  background-size: 100% 5px;
+  background-repeat: no-repeat;
+}
