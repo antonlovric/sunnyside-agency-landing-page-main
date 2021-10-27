@@ -12,6 +12,7 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="styles/main.css" />
+    <script src="./scripts/script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,8 +20,6 @@
       rel="stylesheet"
     />
     <title>Frontend Mentor | Sunnyside agency landing page</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
         font-size: 11px;
@@ -35,19 +34,21 @@
     <header>
       <img src="./images/logo.svg" alt="logo" />
       <nav class="navigation">
-        <a href="#about" class="navigationLink">About</a>
-        <a href="#services" class="navigationLink">Services</a>
-        <a href="#projects" class="navigationLink">Projects</a>
-        <a href="#contact" class="navigationLink">Contact</a>
+        <div class="pointer"></div>
+        <a href="#aboutSection" class="navigationLink">About</a>
+        <a href="#serviceSection" class="navigationLink">Services</a>
+        <a href="#projectSection" class="navigationLink">Projects</a>
+        <a href="#contactSection" class="navigationLink">Contact</a>
       </nav>
+      <img src="./images/icon-hamburger.svg" alt="borgar" class="hamburger" />
     </header>
-    <section class="landingSection">
+    <section id="landingSection" class="landingSection">
       <div class="landingTextArea">
         <h1 class="landingTitle">We are creatives</h1>
         <img class="arrowDown" src="./images/icon-arrow-down.svg" alt="" />
       </div>
     </section>
-    <section class="aboutSection">
+    <section id="aboutSection" class="aboutSection">
       <div class="aboutContainer firstContainer">
         <div class="textAboutContainer">
           <h2 class="headingAbout">Transform your brand</h2>
@@ -83,13 +84,20 @@
         </div>
       </div>
     </section>
-    <section class="serviceSection">
+    <section id="serviceSection" class="serviceSection">
       <div class="serviceContainer">
-        <img
-          src="./images/desktop/image-graphic-design.jpg"
-          alt="Graphic design service"
-          class="serviceImage"
-        />
+        <picture class="servicePicture">
+          <source
+            media="(max-width: 375px )"
+            srcset="./images/mobile/image-graphic-design.jpg"
+          />
+          <img
+            src="./images/desktop/image-graphic-design.jpg"
+            alt="Graphic design service"
+            class="serviceImage graphicDesignImage"
+          />
+        </picture>
+
         <div class="serviceTextContainer">
           <h2 class="serviceHeading">Graphic design</h2>
           <p class="serviceText">
@@ -100,11 +108,18 @@
         </div>
       </div>
       <div class="serviceContainer">
-        <img
-          src="./images/desktop/image-photography.jpg"
-          alt="Photography service"
-          class="serviceImage"
-        />
+        <picture class="servicePicture">
+          <source
+            media="(max-width: 375px )"
+            srcset="./images/mobile/image-photography.jpg"
+          />
+          <img
+            src="./images/desktop/image-photography.jpg"
+            alt="Photography service"
+            class="serviceImage"
+          />
+        </picture>
+
         <div class="serviceTextContainer">
           <h2 class="serviceHeading">Photography</h2>
           <p class="serviceText">
@@ -164,7 +179,7 @@
         </div>
       </div>
     </section>
-    <section class="projectSection">
+    <section id="projectSection" class="projectSection">
       <img
         src="./images/desktop/image-gallery-milkbottles.jpg"
         alt=""
@@ -186,7 +201,7 @@
         class="projectImage"
       />
     </section>
-    <section class="contactSection">
+    <section id="contactSection" class="contactSection">
       <img src="./images/logo.svg" alt="" class="contactLogo" />
       <div class="contactNavigation">
         <a href="#" class="contactNavigationLink">About</a>

@@ -12,6 +12,7 @@
 
 .textAboutContainer {
   padding: 10em;
+  line-height: 1.5;
 }
 
 .headingAbout {
@@ -44,4 +45,29 @@
   background-position: 0 80%;
   background-size: 100% 5px;
   background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 375px) {
+  .aboutContainer {
+    flex-direction: column-reverse;
+    max-height: max-content;
+  }
+  .textAbout {
+    font-size: 1.2rem;
+  }
+  .headingAbout {
+    font-size: 1.8rem;
+  }
+  .imageAbout {
+    height: 100%;
+    width: 100%;
+  }
+  .textAboutContainer {
+    padding: 2em;
+    width: 100%;
+    text-align: center;
+  }
+  .secondContainer {
+    flex-direction: column;
+  }
 }

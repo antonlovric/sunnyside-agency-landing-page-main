@@ -49,3 +49,15 @@
   width: 5em;
   object-fit: cover;
 }
+
+@media screen and (max-width: 375px) {
+  .testimonialsContainer {
+    flex-direction: column;
+    padding: auto;
+  }
+  .testimonial {
+    width: 100%;
+    margin: auto;
+    gap: 3em;
+  }
+}

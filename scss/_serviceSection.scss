@@ -37,3 +37,22 @@
   font-size: 2rem;
   margin-bottom: 0.5em;
 }
+
+.servicePicture {
+  width: 100%;
+}
+
+@media screen and (max-width: 375px) {
+  .serviceSection {
+    flex-direction: column;
+  }
+  .serviceContainer {
+    width: 100%;
+  }
+  .serviceImage {
+    height: 100%;
+  }
+  .serviceText {
+    width: 100%;
+  }
+}

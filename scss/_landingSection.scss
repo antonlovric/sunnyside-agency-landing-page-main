@@ -37,3 +37,16 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
+
+@media screen and (max-width: 375px) {
+  .landingTextArea {
+    margin-top: 5em;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+
+  .landingSection {
+    background-image: url("../images/mobile/image-header.jpg");
+  }
+}

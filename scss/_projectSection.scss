@@ -1,7 +1,13 @@
 .projectSection {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
 }
 .projectImage {
   width: 25%;
+}
+@media screen and (max-width: 375px) {
+  .projectImage {
+    width: 50%;
+  }
 }
